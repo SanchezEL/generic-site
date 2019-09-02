@@ -31,3 +31,25 @@
     transform: rotate(360deg);
   }
 }
+.nav{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BF94E4;
+  color: white;
+}
+
+.titleNav{
+  width: 58%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+}
+.aboutButtonNav{
+  width: 42%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  /* border: 1px solid blue; */
+}
