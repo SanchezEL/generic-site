@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Button from '@material-ui/core/Button';
+import '../App.css'
 
 export default class Images extends Component {
   constructor(props){
@@ -26,15 +28,13 @@ export default class Images extends Component {
   render() {
     console.log('props in images', this.props)
     return (
-      <div>
+      <div className="slideshow-main">
         <div className="slideshow-container">
-          <div className="slides fade">
-            <img src={this.props.images[this.state.slideIndex]} height='200' width='200'/>
-          </div>
+          <img className="slides" src={this.props.images[this.state.slideIndex]}/>
         </div>
 
-        <a className="prev" onClick={() => {this.changeIndex(-1)}}>❮</a>
-        <a className="next" onClick={() => {this.changeIndex(1)}}>❯</a>
+        <Button className="prev" color="primary" onClick={() => {this.changeIndex(-1)}}>❮</Button>
+        <Button className="next" color="primary" onClick={() => {this.changeIndex(1)}}>❯</Button>
       </div>
     )
   }

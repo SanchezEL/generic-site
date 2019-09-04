@@ -26,6 +26,7 @@ export default class ImageInputs extends Component {
                     })
                     console.log('before add image', this.state.text)
                     this.props.addImage(this.state.text)
+                    e.target.value =''
                   }
                 }
               }

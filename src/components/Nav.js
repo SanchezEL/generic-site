@@ -18,11 +18,12 @@ export default function Nav() {
   const classes = useStyles();
   return (
     <div className='nav'>
+      <div className ='spacerNav'></div>
       <div className='titleNav'>
         <h1>Generic Site</h1>
       </div>
       <div className='aboutButtonNav'>
-              <Button className={classes.navButton}>About</Button>
+        <Button className={classes.navButton}>About</Button>
       </div>
     </div>
   )

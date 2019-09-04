@@ -7,6 +7,7 @@ import './App.css';
 import Nav from './components/Nav'
 import ImageInputsContainer from './containers/ImageInputsContainer'
 import ImagesContainer from './containers/ImagesContainer'
+import AboutThisSite from './components/AboutThisSite'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Nav/>
         <ImageInputsContainer/>
         <ImagesContainer/>
+        <AboutThisSite/>
       </Provider>
     </div>
   );
