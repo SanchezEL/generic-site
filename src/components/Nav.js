@@ -20,7 +20,7 @@ export default function Nav() {
     <div className='nav'>
       <div className ='spacerNav'></div>
       <div className='titleNav'>
-        <h1>Generic Site</h1>
+        <textarea>Generic Site</textarea>
       </div>
       <div className='aboutButtonNav'>
         <Button className={classes.navButton}>About</Button>
