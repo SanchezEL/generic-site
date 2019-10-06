@@ -24,16 +24,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function AboutThisSite() {
   const classes = useStyles();
-  const [values, setValues] = React.useState({
-    name: 'Cat in the Hat',
-    age: '',
-    multiline: 'Controlled',
-    currency: 'EUR',
-  });
+  // const [values, setValues] = React.useState({
+  //   name: 'Cat in the Hat',
+  //   age: '',
+  //   multiline: 'Controlled',
+  //   currency: 'EUR',
+  // });
 
 
   const handleChange = name => event => {
-    setValues({ ...values, [name]: event.target.value });
+    // setValues({ ...values, [name]: event.target.value });
   };
   return (
     <div>

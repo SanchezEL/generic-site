@@ -6,3 +6,10 @@ export function addImage(imgUrl) {
     value: imgUrl
   }
 }
+export function setStyles(styles) {
+  console.log('action value of setStyles', styles)
+  return {
+    type: "SET_STYLES",
+    value: styles
+  }
+}

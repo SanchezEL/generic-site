@@ -41,8 +41,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: palevioletred; */
   background-color: #BF94E4;
-  color: white;
+  color: #ffffff;
 }
 .spacerNav{
   /* border: 1px solid blue; */

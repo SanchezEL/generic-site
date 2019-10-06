@@ -9,7 +9,9 @@ export default class Images extends Component {
       slideIndex: 0
     }
   }
+    
   
+
   changeIndex(n){
     console.log(n)
     let tempIndex = this.state.slideIndex + n

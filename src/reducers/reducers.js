@@ -9,7 +9,17 @@ const addImage =(state =[], action)=>{
       return state
   }
 }
+const setStyles = (state = {colorPrimary: '#BF94E4'}, action) =>{
+  console.log('style action', action)
+  switch(action.type){
+    case "SET_STYLES":
+      return action.value
+    default:
+      return state
+  }
+}
 
 export default combineReducers({
-  addImage
+  addImage,
+  setStyles
 })
