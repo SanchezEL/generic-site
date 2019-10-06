@@ -18,6 +18,9 @@ let useStyles = makeStyles({
     alignItems: 'center',
     background: '#BF94E4',
     color: '#ffffff'
+  },
+  textareaOfNav: {
+    background: '#BF94E4'
   }
 });
 
@@ -39,6 +42,9 @@ export default function Nav(props) {
       alignItems: 'center',
       background: `${props.styles.colorPrimary}`,
       color: '#ffffff'
+    },
+    textareaOfNav:{
+      background: `${props.styles.colorPrimary}}`
     }
   })
   const [values, setValues] = React.useState({
@@ -50,7 +56,7 @@ export default function Nav(props) {
     <div className={classes.theNav}>
       <div className ='spacerNav'></div>
       <div className='titleNav'>
-        <textarea>Generic Site</textarea>
+        <textarea className={classes.textareaOfNav}>Generic Site</textarea>
       </div>
       <div className='aboutButtonNav'>
         <Button className={classes.navButton}>About</Button>
